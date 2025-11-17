@@ -13,7 +13,7 @@ import {
   SettleResponse,
   VerifyResponse,
 } from "../../../../types/verify";
-import { SCHEME } from "../../../exact";
+import { SCHEME } from "../..";
 import { splitSignature } from "./sign";
 import { EIP7702SellerWalletMinimalAbi } from "../../../../types/shared/evm";
 

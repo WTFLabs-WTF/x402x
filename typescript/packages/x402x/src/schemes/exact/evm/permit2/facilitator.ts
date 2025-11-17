@@ -25,7 +25,7 @@ import {
   SettleResponse,
   VerifyResponse,
 } from "../../../../types/verify";
-import { SCHEME } from "../../../exact";
+import { SCHEME } from "../..";
 
 // ERC165 ABI for supportsInterface
 const ERC165_ABI = [

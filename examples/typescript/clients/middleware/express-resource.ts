@@ -7,7 +7,7 @@ import { bsc } from "viem/chains";
 const app = express();
 app.use(express.json());
 
-const SELLER_EIP7702_RECIPIENT_ADDRESS = '';
+const SELLER_EIP7702_RECIPIENT_ADDRESS = ''; // app.x402x.ai address
 const ASSET_ADDRESS = '0x8d0D000Ee44948FC98c9B98A4FA4921476f08B0d';
 const MAX_AMOUNT_REQUIRED = parseEther("0.01").toString();
 const PORT = 3939;

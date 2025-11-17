@@ -50,7 +50,7 @@ import {
   getTokenPayerFromTransaction,
 } from "../../../../shared/svm";
 import { getRpcClient } from "../../../../shared/svm/rpc";
-import { SCHEME } from "../../";
+import { SCHEME } from "../..";
 
 /**
  * Verify the payment payload against the payment requirements.

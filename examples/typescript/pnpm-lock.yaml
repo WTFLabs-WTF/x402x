@@ -18,7 +18,7 @@ importers:
         specifier: ^5.8.3
         version: 5.9.3
 
-  ../../typescript/packages/x402:
+  ../../typescript/packages/x402x:
     dependencies:
       '@scure/base':
         specifier: ^1.2.6
@@ -124,7 +124,7 @@ importers:
         specifier: ^3.0.5
         version: 3.2.4(@types/debug@4.1.12)(@types/node@22.19.1)(jsdom@26.1.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))(tsx@4.20.6)
 
-  ../../typescript/packages/x402-detector:
+  ../../typescript/packages/x402x-detector:
     dependencies:
       viem:
         specifier: ^2.21.26
@@ -176,7 +176,7 @@ importers:
         specifier: ^3.0.5
         version: 3.2.4(@types/debug@4.1.12)(@types/node@22.19.1)(jsdom@26.1.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))(tsx@4.20.6)
 
-  ../../typescript/packages/x402-facilitator:
+  ../../typescript/packages/x402x-facilitator:
     devDependencies:
       '@types/node':
         specifier: ^22.13.4
@@ -194,14 +194,14 @@ importers:
         specifier: ^3.0.5
         version: 3.2.4(@types/debug@4.1.12)(@types/node@22.19.1)(jsdom@26.1.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))(tsx@4.20.6)
 
-  ../../typescript/packages/x402-fetch:
+  ../../typescript/packages/x402x-fetch:
     dependencies:
       viem:
         specifier: ^2.21.26
         version: 2.39.0(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(zod@3.25.76)
       x402x:
         specifier: workspace:^
-        version: link:../x402
+        version: link:../x402x
       zod:
         specifier: ^3.24.2
         version: 3.25.76
@@ -252,11 +252,11 @@ importers:
         specifier: ^3.0.5
         version: 3.2.4(@types/debug@4.1.12)(@types/node@22.19.1)(jsdom@26.1.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))(tsx@4.20.6)
 
-  ../../typescript/packages/x402-server:
+  ../../typescript/packages/x402x-server:
     dependencies:
       express:
         specifier: ^4.0.0 || ^5.0.0
-        version: 4.21.2
+        version: 5.1.0
       hono:
         specifier: ^4.0.0 || ^5.0.0
         version: 4.10.5
@@ -265,13 +265,13 @@ importers:
         version: 2.39.0(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(zod@3.25.76)
       x402x:
         specifier: workspace:^
-        version: link:../x402
+        version: link:../x402x
       x402x-detector:
         specifier: workspace:^
-        version: link:../x402-detector
+        version: link:../x402x-detector
       x402x-facilitator:
         specifier: workspace:^
-        version: link:../x402-facilitator
+        version: link:../x402x-facilitator
       zod:
         specifier: ^3.24.2
         version: 3.25.76
@@ -341,50 +341,10 @@ importers:
         version: 2.39.0(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(zod@4.1.12)
       x402x:
         specifier: workspace:*
-        version: link:../../../../typescript/packages/x402
+        version: link:../../../../typescript/packages/x402x
       x402x-fetch:
         specifier: workspace:*
-        version: link:../../../../typescript/packages/x402-fetch
-    devDependencies:
-      '@types/node':
-        specifier: ^22.13.5
-        version: 22.19.1
-      tsx:
-        specifier: ^4.19.3
-        version: 4.20.6
-
-  clients/demo:
-    dependencies:
-      '@hono/node-server':
-        specifier: ^1.13.8
-        version: 1.19.6(hono@4.10.5)
-      axios:
-        specifier: ^1.7.9
-        version: 1.13.2
-      dotenv:
-        specifier: ^16.4.5
-        version: 16.6.1
-      express:
-        specifier: ^5.0.1
-        version: 5.1.0
-      hono:
-        specifier: ^4.7.2
-        version: 4.10.5
-      viem:
-        specifier: ^2.23.5
-        version: 2.39.0(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(zod@4.1.12)
-      x402x:
-        specifier: workspace:*
-        version: link:../../../../typescript/packages/x402
-      x402x-facilitator:
-        specifier: workspace:*
-        version: link:../../../../typescript/packages/x402-facilitator
-      x402x-fetch:
-        specifier: workspace:*
-        version: link:../../../../typescript/packages/x402-fetch
-      x402x-server:
-        specifier: workspace:*
-        version: link:../../../../typescript/packages/x402-server
+        version: link:../../../../typescript/packages/x402x-fetch
     devDependencies:
       '@types/node':
         specifier: ^22.13.5
@@ -412,16 +372,16 @@ importers:
         version: 2.39.0(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(zod@4.1.12)
       x402x:
         specifier: workspace:*
-        version: link:../../../../typescript/packages/x402
+        version: link:../../../../typescript/packages/x402x
       x402x-facilitator:
         specifier: workspace:*
-        version: link:../../../../typescript/packages/x402-facilitator
+        version: link:../../../../typescript/packages/x402x-facilitator
       x402x-fetch:
         specifier: workspace:*
-        version: link:../../../../typescript/packages/x402-fetch
+        version: link:../../../../typescript/packages/x402x-fetch
       x402x-server:
         specifier: workspace:*
-        version: link:../../../../typescript/packages/x402-server
+        version: link:../../../../typescript/packages/x402x-server
     devDependencies:
       '@types/node':
         specifier: ^22.13.5
@@ -452,17 +412,57 @@ importers:
         version: 2.39.0(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(zod@4.1.12)
       x402x-facilitator:
         specifier: workspace:*
-        version: link:../../../../typescript/packages/x402-facilitator
+        version: link:../../../../typescript/packages/x402x-facilitator
       x402x-fetch:
         specifier: workspace:*
-        version: link:../../../../typescript/packages/x402-fetch
+        version: link:../../../../typescript/packages/x402x-fetch
       x402x-server:
         specifier: workspace:*
-        version: link:../../../../typescript/packages/x402-server
+        version: link:../../../../typescript/packages/x402x-server
     devDependencies:
       '@types/better-sqlite3':
         specifier: ^7.6.12
         version: 7.6.13
+      '@types/node':
+        specifier: ^22.13.5
+        version: 22.19.1
+      tsx:
+        specifier: ^4.19.3
+        version: 4.20.6
+
+  clients/middleware:
+    dependencies:
+      '@hono/node-server':
+        specifier: ^1.13.8
+        version: 1.19.6(hono@4.10.5)
+      axios:
+        specifier: ^1.7.9
+        version: 1.13.2
+      dotenv:
+        specifier: ^16.4.5
+        version: 16.6.1
+      express:
+        specifier: ^5.0.1
+        version: 5.1.0
+      hono:
+        specifier: ^4.7.2
+        version: 4.10.5
+      viem:
+        specifier: ^2.23.5
+        version: 2.39.0(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(zod@4.1.12)
+      x402x:
+        specifier: workspace:*
+        version: link:../../../../typescript/packages/x402x
+      x402x-facilitator:
+        specifier: workspace:*
+        version: link:../../../../typescript/packages/x402x-facilitator
+      x402x-fetch:
+        specifier: workspace:*
+        version: link:../../../../typescript/packages/x402x-fetch
+      x402x-server:
+        specifier: workspace:*
+        version: link:../../../../typescript/packages/x402x-server
+    devDependencies:
       '@types/node':
         specifier: ^22.13.5
         version: 22.19.1
@@ -489,10 +489,10 @@ importers:
         version: 2.39.0(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(zod@4.1.12)
       x402x:
         specifier: workspace:*
-        version: link:../../../../typescript/packages/x402
+        version: link:../../../../typescript/packages/x402x
       x402x-fetch:
         specifier: workspace:*
-        version: link:../../../../typescript/packages/x402-fetch
+        version: link:../../../../typescript/packages/x402x-fetch
     devDependencies:
       '@types/node':
         specifier: ^22.13.5
@@ -520,10 +520,10 @@ importers:
         version: 2.39.0(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(zod@4.1.12)
       x402x:
         specifier: workspace:*
-        version: link:../../../../typescript/packages/x402
+        version: link:../../../../typescript/packages/x402x
       x402x-fetch:
         specifier: workspace:*
-        version: link:../../../../typescript/packages/x402-fetch
+        version: link:../../../../typescript/packages/x402x-fetch
     devDependencies:
       '@types/node':
         specifier: ^22.13.5
@@ -542,7 +542,7 @@ importers:
         version: 4.21.2
       x402x:
         specifier: workspace:*
-        version: link:../../../typescript/packages/x402
+        version: link:../../../typescript/packages/x402x
     devDependencies:
       '@eslint/js':
         specifier: ^9.24.0
@@ -5583,7 +5583,7 @@ snapshots:
       '@noble/hashes': 1.8.0
       '@scure/base': 1.2.6
       '@types/debug': 4.1.12
-      debug: 4.3.4
+      debug: 4.4.3
       pony-cause: 2.1.11
       semver: 7.7.3
       uuid: 9.0.1
@@ -5597,7 +5597,7 @@ snapshots:
       '@noble/hashes': 1.8.0
       '@scure/base': 1.2.6
       '@types/debug': 4.1.12
-      debug: 4.3.4
+      debug: 4.4.3
       pony-cause: 2.1.11
       semver: 7.7.3
       uuid: 9.0.1
@@ -6790,7 +6790,7 @@ snapshots:
     dependencies:
       '@babel/runtime': 7.28.4
       '@noble/curves': 1.9.7
-      '@noble/hashes': 1.4.0
+      '@noble/hashes': 1.8.0
       '@solana/buffer-layout': 4.0.1
       '@solana/codecs-numbers': 2.3.0(typescript@5.9.3)
       agentkeepalive: 4.6.0
@@ -9430,11 +9430,11 @@ snapshots:
   ox@0.6.7(typescript@5.9.3)(zod@3.25.76):
     dependencies:
       '@adraffy/ens-normalize': 1.11.1
-      '@noble/curves': 1.8.1
-      '@noble/hashes': 1.7.1
-      '@scure/bip32': 1.6.2
-      '@scure/bip39': 1.5.4
-      abitype: 1.0.8(typescript@5.9.3)(zod@3.25.76)
+      '@noble/curves': 1.9.7
+      '@noble/hashes': 1.8.0
+      '@scure/bip32': 1.7.0
+      '@scure/bip39': 1.6.0
+      abitype: 1.1.1(typescript@5.9.3)(zod@3.25.76)
       eventemitter3: 5.0.1
     optionalDependencies:
       typescript: 5.9.3

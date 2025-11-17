@@ -20,7 +20,7 @@ import {
 } from "@solana/kit";
 import { PaymentPayload, PaymentRequirements, ExactSvmPayload } from "../../../../types/verify";
 import { Network } from "../../../../types";
-import { SCHEME } from "../../";
+import { SCHEME } from "../..";
 import * as SvmShared from "../../../../shared/svm";
 import * as rpc from "../../../../shared/svm/rpc";
 import {
