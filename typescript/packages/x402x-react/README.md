@@ -59,8 +59,8 @@ A React hook that wraps `x402x-fetch` to handle the payment flow. It uses `@tans
 | Property | Type | Required | Description |
 |----------|------|----------|-------------|
 | `targetUrl` | `string` | Yes | The URL of the protected resource that requires payment. |
-| `value` | `bigint` | Yes | The maximum payment amount authorized (in wei). |
-| `walletClient` | `WalletClient` | Yes | The Viem WalletClient (usually from `wagmi`). |
+| `value` | `bigint` | No | The maximum payment amount authorized (in wei). Required for mutation. |
+| `walletClient` | `WalletClient` | No | The Viem WalletClient (usually from `wagmi`). Required for mutation. |
 | `paymentType` | `string` | No | Payment method to use. Defaults to `'permit'`. |
 | `init` | `RequestInit` | No | Standard Fetch options (headers, method, etc.). |
 | `mutationOptions` | `UseMutationOptions` | No | Additional options for React Query's `useMutation`. |

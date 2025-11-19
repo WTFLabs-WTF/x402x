@@ -61,7 +61,7 @@ export const PAYMENT_TYPE_HEADER = "x-payment-type" as const;
 export function wrapFetchWithPayment(
   fetch: typeof globalThis.fetch,
   walletClient: Signer | MultiNetworkSigner,
-  maxValue: bigint = BigInt(0.1 * 10 ** 6), // Default to 0.10 USDC
+  maxValue?: bigint,
   paymentRequirementsSelector: PaymentRequirementsSelector = selectPaymentRequirements,
   config?: X402Config,
 ) {
@@ -92,7 +92,7 @@ export function wrapFetchWithPayment(
       "exact",
     );
 
-    if (BigInt(selectedPaymentRequirements.maxAmountRequired) > maxValue) {
+    if (maxValue && BigInt(selectedPaymentRequirements.maxAmountRequired) > maxValue) {
       throw new Error("Payment amount exceeds maximum allowed");
     }
 

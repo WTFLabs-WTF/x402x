@@ -29,9 +29,9 @@ export interface X402PaymentResponse {
 
 export interface UseX402PaymentOptions {
   targetUrl: string;         // Payment resource URL
-  value: bigint;             // Payment amount (wei)
+  value?: bigint;             // Payment amount (wei)
   paymentType?: string;      // Payment type (default 'permit')
-  walletClient: WalletClient | undefined; // Wallet client from wagmi
+  walletClient?: WalletClient; // Wallet client from wagmi
   init?: RequestInit;        // Fetch options
   mutationOptions?: Omit<UseMutationOptions<X402PaymentResponse, Error>, 'mutationFn'>;
 }
@@ -67,13 +67,8 @@ export function useX402Payment(options: UseX402PaymentOptions) {
         throw new Error('支付资源 URL 无效');
       }
 
-      if (!value || value === BigInt(0)) {
-        throw new Error('支付金额无效，必须大于 0');
-      }
-
       console.log('📋 Starting X402 payment flow...');
       console.log('targetUrl:', targetUrl);
-      console.log('value:', value.toString());
 
       const time = Date.now();
       console.log('time:', time);
